@@ -59,11 +59,15 @@ const superheroes = [...Marvel, ...DC];
 console.log(superheroes); // Output: ['Ironman', 'Thor', 'Hulk', 'Black Widow', 'Captain America', 'Superman', 'Batman', 'Wonder', 'Aquaman', 'Flash']
 
 // IsArray ,From, Of
-console.log(Array.isArray(superheroes)); // Output: true
+/*console.log(Array.isArray(superheroes)); // Output: true
 console.log(Array.from("Sumit")); // Output: ['S', 'u', 'm', 'i', 't']
 let sc1 = 100;
 let sc2 = 200;
 let sc3 = 300;
 let sc4 = 444;
 let sc5 = 555;
-console.log(Array.of(sc1,sc2,sc3,sc4,sc5)); // Output: [100, 200, 300, 444, 555]
+console.log(Array.of(sc1,sc2,sc3,sc4,sc5)); // Output: [100, 200, 300, 444, 555]*/
+
+const another_array = [2,3,4,5,6,6,[7,8,9,4,5,6],[4,5,6,8],[1,2,3,4]];
+const real_another_array = another_array.flat(Infinity);
+console.log(real_another_array);
