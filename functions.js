@@ -26,3 +26,12 @@ addTwoNumbers(2,"a") // 2a
 addTwoNumbers(2,"4")// 24
 addTwoNumbers(2,null)// 2
 
+function loginUserName(username = "Shivam"){
+    if(!username){
+        console.log("Please enter a Valid Username");
+        return
+    }
+    return `${username} Just Logged In`
+}
+console.log(loginUserName());
+console.log(loginUserName("Sumit Rathore"));
